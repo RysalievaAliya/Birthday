@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block body %} 
+    <h1> Birthday</h1>
+    
+    <ul>
+        {% for i in bd %}
+            <li>ID: {{i[0]}} Name: {{i[1]}} Date: {{i[2]}}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
